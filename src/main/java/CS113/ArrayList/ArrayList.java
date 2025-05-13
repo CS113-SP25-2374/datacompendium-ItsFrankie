@@ -55,12 +55,17 @@ public class ArrayListFN <E> implements ListInterface <E>
         {   //if last index is empty and index0 is the last element in array1
             array1[array1.length - 1] = element0;
         }
+        for(int i = size()-1; i>=index; i--)
+        {
+            array1[i] = array[i-1];
+        }
+
         for (int i = index0; i < array1.length; i++)
-        {   //start at index0 and push occupying element forward
+        {   /*//start at index0 and push occupying element forward
             E element1 = array1[i+1]; //store element one spot ahead as element1
             array1[i+1] = array1[i]; //move element in current spot forward by one
             array1[i] = element0; //store former occupying element as element0
-            element0 = element1; //they are now the same (?)
+            element0 = element1; //they are now the same (?)*/
         }
     }
 
@@ -69,7 +74,7 @@ public class ArrayListFN <E> implements ListInterface <E>
     {
         for (int i = 0; i < array1.length; i++)
         {
-            array1[1]
+            array1[i] = null;
         }
     }
 
@@ -158,16 +163,16 @@ public class ArrayListFN <E> implements ListInterface <E>
     public String toString()
     {
         StringBuilder sBuilder1 = new StringBuilder();
+
         sBuilder1.append("[");
 
         int size = size();
-        for (int i = 0; i<size; i++)
-        {
-            sBuilder1.append(array1[i].toString());
-            if
-            {
-
-            }
+        for (int i = 0; i < size; i++) {
+            sBuilder1.append(array1[i]);
+            if (i < size - 1) sBuilder1.append(", ");
         }
+
+        sBuilder1.append("]");
+        return sBuilder1.toString();
     }
 }

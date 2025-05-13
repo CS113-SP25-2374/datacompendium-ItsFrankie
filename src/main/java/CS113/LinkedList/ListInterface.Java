@@ -1,7 +1,4 @@
-package CS113;
-
-public interface ListInterface <E>
-{
+public interface ListInterface <E> {
     /**
      * Adds an element to the end of the list
      * @param element
