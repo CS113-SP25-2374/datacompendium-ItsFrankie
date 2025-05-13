@@ -1,23 +1,12 @@
 package CS113.StacksQueues.Stack;
-import java.util.ArrayList;
 
-
-public class StackArray<E> implements StackInterface<E> 
+public class StackArray<E> implements StackInterface<E>
 { 
     E[] array;
     int first;
     int last;
     int count;
-
-    public StackArray()
-    {
-        resize(10); //ArrayDeque (1)
-        first = -1;
-        last = -1;
-        count = 0;
-    }
-
-    /* *
+    
     private void resize(int newSize) //ArrayDeque (1)
     {
         if (array == null) 
@@ -37,7 +26,6 @@ public class StackArray<E> implements StackInterface<E>
         }
         array = newArray;
     } //end of resize method (0)
-    */
 
     public boolean empty() //ArrayStack (1)
     { //ArrayDeque (12)

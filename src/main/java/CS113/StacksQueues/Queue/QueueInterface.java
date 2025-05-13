@@ -1,5 +1,6 @@
 package CS113.StacksQueues.Queue;
-public interface QueueInterface<E> 
+
+public interface QueueInterface<E>
 {
     /**
      * Adds an element to the queue

@@ -1,3 +1,6 @@
+package CS113.Other.HashMap;
+import java.util.ArrayList;
+
 public interface MapInterface<K, V> {
 
     // Returns the number of key-value mappings in this map

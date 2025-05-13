@@ -1,3 +1,5 @@
+package CS113.Lists.LinkedList;
+
 public interface ListIteratorInterface<E> {
     /**
      * Adding an element after the current

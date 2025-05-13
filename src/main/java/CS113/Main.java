@@ -11,11 +11,11 @@ public class Main
     {
         Random random = new Random();
 
-        Stack<Integer> list1 = new Stack<Integer>(10);
+        Stack<Integer> list1 = new Stack<Integer>();
         
-        for(int i = 0; i < list1.size(); i++)
-            list1.add(random.nextInt(100));
-
-            list1.inserti();
+//        for(int i = 0; i < list1.size(); i++)
+//            list1.add(random.nextInt(100));
+//
+//            list1.insertionSort();
     }
 }

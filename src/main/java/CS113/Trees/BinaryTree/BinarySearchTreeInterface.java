@@ -1,8 +1,6 @@
-package CS113.BinaryTree;
+package CS113.Trees.BinaryTree;
 
-
-
-public interface BinarySearchTree<E extends Comparable<E>> 
+public interface BinarySearchTreeInterface<E extends Comparable<E>>
     {
 
         // 1) Insert a value into the BST

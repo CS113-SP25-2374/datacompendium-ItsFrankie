@@ -1,6 +1,8 @@
-package CS113;
+package CS113.Lists.ArrayList;
 
-public class ArrayListFN <E> implements ListInterface <E>
+import CS113.Lists.LinkedList.ListInterface;
+
+public class ArrayListFN <E> implements ListInterface<E>
 {
     private E[] array1;
     final static int DEFAULT_SIZE = 10;
@@ -55,9 +57,9 @@ public class ArrayListFN <E> implements ListInterface <E>
         {   //if last index is empty and index0 is the last element in array1
             array1[array1.length - 1] = element0;
         }
-        for(int i = size()-1; i>=index; i--)
+        for(int i = size()-1; i>=index0; i--)
         {
-            array1[i] = array[i-1];
+            array1[i] = array1[i-1];
         }
 
         for (int i = index0; i < array1.length; i++)

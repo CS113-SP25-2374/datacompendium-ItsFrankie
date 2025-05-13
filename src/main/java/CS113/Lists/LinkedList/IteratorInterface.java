@@ -1,4 +1,6 @@
-public interface IteratorInterface<E> 
+package CS113.Lists.LinkedList;
+
+public interface IteratorInterface<E>
 {
     /**
      * Checks to see if a next element exists

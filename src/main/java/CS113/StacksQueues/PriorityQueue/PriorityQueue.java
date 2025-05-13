@@ -1,4 +1,7 @@
 package CS113.StacksQueues.PriorityQueue;
+
+import java.util.ArrayList;
+
 public class PriorityQueue <E extends Comparable<E>>
 {
     ArrayList<E> array1 = new ArrayList<>();
@@ -10,7 +13,7 @@ public class PriorityQueue <E extends Comparable<E>>
 
     public void heapifyUp(E element0, int index0)
     {
-        if (index < 0)
+        if (index0 < 0)
         { return; }
 
         int parentIndex = (index0 - 1) / 2;
@@ -30,21 +33,21 @@ public class PriorityQueue <E extends Comparable<E>>
         int rightChild = index0 * 2 + 2;
         int smallest = index0;
 
-        if (leftChild >= array.size())
+        if (leftChild >= array1.size())
         {
             smallest = leftChild;
         }
-        else if(rightChild < array.size())
+        else if(rightChild < array1.size())
         {
             smallest = rightChild;
         }
 
-        E smallestValue = array1.get(smallestIndex);
+        E smallestValue = array1.get(smallest);
         if (element0.compareTo(smallestValue) > 0)
         {
-            array1.set(index, smallestValue);
-            array1.set(smallestIndex, element0);
-            heapifyDown(element0, smallestIndex);
+            array1.set(index0, smallestValue);
+            array1.set(smallest, element0);
+            heapifyDown(element0, smallest);
         }
 
     } //end of heapifyDown method
@@ -52,7 +55,7 @@ public class PriorityQueue <E extends Comparable<E>>
     public boolean add(E element0)
     {
         array1.add(element0);
-        heapifyUp(element, array1.size()-1);
+        heapifyUp(element0, array1.size()-1);
         return true;
     }
 
@@ -64,14 +67,9 @@ public class PriorityQueue <E extends Comparable<E>>
     public E poll()
     {
         E first = array1.get(0);
-        E last = array1.get(array.size() - 1);
+        E last = array1.get(array1.size() - 1);
         array1.set(0, last);
         heapifyDown(last,0);
         return first;
-    }
-
-    public toString()
-    {
-
     }
 }

@@ -1,5 +1,6 @@
 package CS113.StacksQueues.Deque;
-public class DequeArray<E> implements DequeInterface<E> 
+
+public class DequeArray<E> implements DequeInterface<E>
 {
     E[] array;
     int first;

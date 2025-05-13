@@ -1,5 +1,6 @@
 package CS113.StacksQueues.Stack;
-public interface StackInterface<E> 
+
+public interface StackInterface<E>
 {
 
     /**

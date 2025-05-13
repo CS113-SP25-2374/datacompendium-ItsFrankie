@@ -1,3 +1,7 @@
+package CS113.Lists.LinkedList;
+
+import CS113.StacksQueues.Deque.DequeInterface;
+
 public class LinkedList<E> implements ListInterface<E>, ListIterableInterface<E>, DequeInterface<E> {
 
     private class Node<E>
@@ -12,7 +16,7 @@ public class LinkedList<E> implements ListInterface<E>, ListIterableInterface<E>
     private class Iterator<E> implements ListIteratorInterface<E> 
     { //
         private Node<E> current;
-        LinkedListPH<E> list;
+        LinkedList<E> list;
         int index = 0;
 
         private Iterator(LinkedList<E> list) 
@@ -24,7 +28,7 @@ public class LinkedList<E> implements ListInterface<E>, ListIterableInterface<E>
         public void add(E element) 
         {
             Node<E> node = new Node<>(element);
-            list.linkNode((LinkedList<E>.Node<E>) node, (LinkedListPH<E>.Node<E>) current);
+            list.linkNode((LinkedList<E>.Node<E>) node, (LinkedList<E>.Node<E>) current);
         }
 
         @Override
