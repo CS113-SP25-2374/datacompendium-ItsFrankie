@@ -1,25 +1,21 @@
 package CS113;
 
+import java.util.Random;
+
+import java.util.ArrayList;
+import java.util.Stack;
+
 public class Main
 {
     public static void main(String[] args)
     {
-        ArrayListFN<Integer> aList1 = new ArrayListFN<>();
-        ArrayListFN<Integer> aList2 = new ArrayListFN<>();
+        Random random = new Random();
 
-        for(int i=0; i<10; i++)
-        {
-            aList1.add(i);
-            aList2.add(i);
-        }
-        aList1.add(4,null);
-        aList2.add(4,null);
+        Stack<Integer> list1 = new ArrayList<Integer>(10);
+        
+        for(int i = 0; i < list1.size(); i++)
+            list1.add(random.nextInt(100));
 
-        System.out.println(aList1);
-        System.out.println(aList1.size());
-        System.out.println(aList2);
-        System.out.println(aList2.size());
-
-        aList2.clear();
+            list1.insertionSort();
     }
 }

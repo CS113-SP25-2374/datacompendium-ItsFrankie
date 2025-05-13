@@ -67,7 +67,7 @@ public class ArrayListFN <E> implements ListInterface <E>
             array1[i] = element0; //store former occupying element as element0
             element0 = element1; //they are now the same (?)*/
         }
-    }
+    } //end of add(index0, element0) method
 
     @Override
     public void clear()

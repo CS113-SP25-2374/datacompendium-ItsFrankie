@@ -50,7 +50,8 @@ public class StackArray<E> implements StackInterface<E>
             resize(array.length * 2); //ArrayDeque (1)
         }
 
-        if (last == -1) {
+        if (last == -1) 
+        {
             first = last = 0;
             array[last] = element;
             count++;
