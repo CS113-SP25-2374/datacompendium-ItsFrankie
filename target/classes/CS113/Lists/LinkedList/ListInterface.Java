@@ -1,4 +1,6 @@
-public interface ListInterface <E> {
+package CS113.Lists.LinkedList;
+
+public interface ListInterface<E> {
     /**
      * Adds an element to the end of the list
      * @param element

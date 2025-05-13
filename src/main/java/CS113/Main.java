@@ -12,6 +12,7 @@ public class Main
         Random random = new Random();
 
         Stack<Integer> list1 = new Stack<Integer>();
+        System.out.println("Hello");
         
 //        for(int i = 0; i < list1.size(); i++)
 //            list1.add(random.nextInt(100));
