@@ -1,3 +1,4 @@
+package CS113.StacksQueues.Deque;
 public class DequeArray<E> implements DequeInterface<E> 
 {
     E[] array;
@@ -5,7 +6,7 @@ public class DequeArray<E> implements DequeInterface<E>
     int last;
     int count;
 
-    public ArrayDeque() //ArrayDeque (0)
+    public DequeArray() //ArrayDeque (0)
     {
         resize(10); //ArrayDeque (1)
         first = -1;

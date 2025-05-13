@@ -1,3 +1,4 @@
+package CS113.StacksQueues.PriorityQueue;
 public class PriorityQueue <E extends Comparable<E>>
 {
     ArrayList<E> array1 = new ArrayList<>();

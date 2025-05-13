@@ -1,3 +1,4 @@
+package CS113.StacksQueues.PriorityQueue;
 public interface HeapInterface <E extends Comparable<E>> 
 {
     /**

@@ -1,3 +1,4 @@
+package CS113.StacksQueues.Deque;
 public interface DequeInterface<E> {
     /**
      * Adds an element, can fail!

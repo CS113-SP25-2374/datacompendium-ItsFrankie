@@ -1,3 +1,4 @@
+package CS113.StacksQueues.Queue;
 public interface QueueInterface<E> 
 {
     /**
