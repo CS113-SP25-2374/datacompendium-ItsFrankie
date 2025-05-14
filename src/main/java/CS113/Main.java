@@ -16,8 +16,12 @@ public class Main
         Stack<Integer> stack1 = new Stack<Integer>();
 
         System.out.println("creating number stack...");
+
         for(int i = 0; i < STACK_SIZE; i++)
-        { stack1.push(random.nextInt(100)); }
+        {
+            stack1.push(random.nextInt(100));
+        }
+
         System.out.println("created stack: " + stack1.toString());
 
         System.out.println("\n'pop' the stack (variable " + stack1.pop() + " is removed)");
