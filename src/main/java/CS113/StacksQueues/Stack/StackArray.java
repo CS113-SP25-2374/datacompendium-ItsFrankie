@@ -69,7 +69,17 @@ public class StackArray<E> implements StackInterface<E>
             count++;
         }
         return true;
-    } //end of push method (5)
+    }//end of push method (5)
+
+    public String toString(StackArray<E> stack0)
+    {
+        String string0 = "";
+        while(!stack0.empty())
+        {
+            string0 += stack0.pop() + "/n";
+        }
+        return string0;
+    }
 
     /*@Override
     public int search(Object o) //ArrayStack (5)
